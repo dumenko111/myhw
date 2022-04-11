@@ -1,5 +1,5 @@
 /* /*Font
-Roboto 400 500 900 700
+Roboto 400 500 700 900 
 For logo Raleway 700
 */ /*general text colors #212121 / secondary #757575*/
 :root {
@@ -11,6 +11,9 @@ body {
     font-family: Roboto, sans-serif;
     background-color: var(--primary-background-color);
     font-size: 14px;
+}
+li {
+  list-style-type: none;
 }
 /*---------------------HEADER-----------------------*/
 .logo .logo-blue {
@@ -37,16 +40,17 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.header li {
-  list-style-type: none;
+.nav-list .nav-link.current {
+  color: #2196F3;
 }
+
 .header a:hover {
   color: #2196F3;
 }
 .header a:focus {
   color: #2196F3;
 }
-.img:hover {
+.list:hover {
   color: #2196F3;
 }
 .header-address a {
@@ -68,14 +72,15 @@ body {
   font-weight: 900;
   letter-spacing: 0.06em;
 }
-.hero .hero-button {
+.hero-button {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
   text-decoration: none;
   background-color: #2196F3;
-} /*---------------2 section---------------*/
+}
+/*---------------2 section---------------*/
 .preference .preference-title {
   color: var(--primary-text-color);
   font-size: 14px;
@@ -84,9 +89,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
 }
-.preference li {
-  list-style-type: none;
-}
+
 .preference .preference-text {
   color: #757575;
   font-weight: 400;
@@ -102,16 +105,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.job li {
-  list-style-type: none;
-}
+
 /*---------------4 section TEAM---------------*/
 .team .team-container {
   background-color: #F5F4FA;
 }
-.team li {
-  list-style-type: none;
-}
+
 .team .team-title {
   color: var(--primary-text-color);
   font-size: 36px;
@@ -135,9 +134,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.clients li {
-  list-style-type: none;
-}
+
 /*---------------FOOTER---------------*/
 .footer .container {
   background-color: #2F303A;
@@ -170,6 +167,43 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.14; 
 }
-.footer li {
-  list-style-type: none;
+/*----------------PORTFOLIO------------------*/
+.list-text {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.list-text span {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.80;
+  letter-spacing: 0.03em;
+}
+.list a {
+  text-decoration: none;
+}
+.userpic-info {
+  color: red;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+}
+.radio .btn {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  text-decoration: none;
+  text-align: center;
+}
+.radio .btn:hover, 
+.radio .btn:focus {
+  color: #ffffff;
+  background-color: #2196F3;
 }
