@@ -11,11 +11,45 @@ body {
     font-family: Roboto, sans-serif;
     background-color: var(--primary-background-color);
     font-size: 14px;
+    margin: 0px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
 }
 li {
   list-style-type: none;
 }
 /*---------------------HEADER-----------------------*/
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
+} 
+.nav {
+  display: flex;
+}
+.nav-list {
+  display: flex;
+}
+.nav .nav-link {
+  margin-right: 50px;
+}
+.nav-list {
+  padding-left: 0px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.nav .item:last-child {
+  margin-right: 0px;
+}
 .logo .logo-blue {
   color: #2196F3;
   font-size: 26px;
@@ -31,6 +65,9 @@ li {
   font-family: Raleway;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-right: 88px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .nav-list a {
   color: var(--primary-text-color);
@@ -43,14 +80,20 @@ li {
 .nav-list .nav-link.current {
   color: #2196F3;
 }
-
-.header a:hover {
-  color: #2196F3;
+                             /*address*/
+.header-address {
+  display: flex;
 }
+.header-address {
+  display: flex;
+  margin-left: auto;
+}
+.header-address .header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header a:hover,
 .header a:focus {
-  color: #2196F3;
-}
-.list:hover {
   color: #2196F3;
 }
 .header-address a {
@@ -64,13 +107,23 @@ li {
 /*-----------------MAIN--------------------*/
 /*---------------1 section----------------*/
 .hero .hero-title {
-  color: #757575;
+  color: #ffffff;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
   letter-spacing: 0.06em;
+  margin: 0;
+  
+  margin-bottom: 40px;
+}
+.hero {
+  text-align: center;
+  background-color: #2F303A;
+  padding-top: 200px;
+  padding-bottom: 210px;
+  margin-bottom: 94px;
 }
 .hero-button {
   color: #fff;
@@ -79,6 +132,9 @@ li {
   line-height: 1.87;
   text-decoration: none;
   background-color: #2196F3;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 /*---------------2 section---------------*/
 .preference .preference-title {
@@ -89,13 +145,33 @@ li {
   text-transform: uppercase;
   font-weight: 700;
 }
-
+.preference ul {
+  padding-left: 0;
+}
+.preference .preference-list {
+  display: flex;
+  margin-bottom: 0;
+}
+.preference li {
+  display: inline-block;
+  margin-bottom: 84px;
+}
+.preference li:last-child {
+  margin-right: 0px;
+}
+.preference-icon {
+  padding: 25px 100px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-right: 30px;
+}
 .preference .preference-text {
   color: #757575;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  width: 270px;
 } /*---------------3 section JOB---------------*/
 .job .job-title {
   color: var(--primary-text-color);
@@ -104,13 +180,51 @@ li {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.job li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.job .job-list {
+  display: flex;
+  margin-left: auto;
+  padding-left: 0;
+}
+.job-item {
+  margin-bottom: 94px;
+}
+.job .job-item:last-child {
+  margin-right: 0;
 }
 
 /*---------------4 section TEAM---------------*/
-.team .team-container {
+.team {
   background-color: #F5F4FA;
 }
-
+.team-list li {
+  margin-right: 30px;
+  background-color: #ffffff;
+  width: 270px;
+}
+.team-list {
+  padding-bottom: 94px;
+  margin-bottom: 94px;
+}
+.team-list li:last-child {
+  margin-right: 0px;
+}
+.team-title-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.team-list img {
+  margin-bottom: 30px;
+}
+.team-work {
+  text-align: center;
+}
 .team .team-title {
   color: var(--primary-text-color);
   font-size: 36px;
@@ -118,6 +232,9 @@ li {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 94px;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .team .team-work {
   color: #757575;
@@ -133,14 +250,37 @@ li {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.clients-list li {
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+.clients-list li:last-child {
+  margin-right: 0px;
 }
 
 /*---------------FOOTER---------------*/
-.footer .container {
+.footer {
   background-color: #2F303A;
+  display: flex;
 }
 .logo-white {
   color: #fff;
+}
+.logo-blue {
+  color: #2196F3;
+}
+.footer-logo {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 1.19;
+  font-family: Raleway;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .footer-address span {
   font-weight: 400;
@@ -166,8 +306,29 @@ li {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   line-height: 1.14; 
+  display: flex;
 }
 /*----------------PORTFOLIO------------------*/
+/* .radio .btn {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  text-decoration: none;
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+.radio .btn:hover,
+.radio .btn:focus {
+  color: #ffffff;
+  background-color: #2196F3;
+}
+
+
+
+
 .list-text {
   color: var(--primary-text-color);
   font-size: 18px;
@@ -185,25 +346,32 @@ li {
 .list a {
   text-decoration: none;
 }
-.userpic-info {
-  color: red;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.38;
-  letter-spacing: 0.03em;
+
+.main-page {
+  margin-top: 56px;
 }
-.radio .btn {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  background-color: #f5f4fa;
-  text-decoration: none;
-  text-align: center;
+.list .list-text {
+  margin-top: 20px;
+  margin-left: 24px;
 }
-.radio .btn:hover, 
-.radio .btn:focus {
-  color: #ffffff;
-  background-color: #2196F3;
+.list-text-text {
+  margin-top: 20px;
+  margin-left: 24px; 
+  color: #757575;    
+} */
+.list .list-item {
+  display: flex;
 }
+.main-page .list {
+  display: flex;
+}
+.list {
+  flex-wrap: wrap;
+}
+.list li {
+  margin-right: 30px;
+}
+.list li:nth-child(3n) {
+  margin-right: 0px;
+}
+/*----------------------test----------*/
