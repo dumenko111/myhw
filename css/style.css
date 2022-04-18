@@ -7,6 +7,9 @@ For logo Raleway 700
     --primary-background-color: #FFFFFF;
     --secondary-background-color: #F5F4FA;
 }
+html {
+  box-sizing: border-box;
+}
 body {
     font-family: Roboto, sans-serif;
     background-color: var(--primary-background-color);
@@ -34,21 +37,13 @@ li {
 .nav {
   display: flex;
 }
-.nav-list {
-  display: flex;
-}
-.nav .nav-link {
-  margin-right: 50px;
-}
-.nav-list {
-  padding-left: 0px;
+.nav-list .nav-link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-top: 0;
-  margin-bottom: 0;
 }
-.nav .item:last-child {
-  margin-right: 0px;
+.nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 .logo .logo-blue {
   color: #2196F3;
@@ -83,12 +78,14 @@ li {
                              /*address*/
 .header-address {
   display: flex;
-}
-.header-address {
-  display: flex;
   margin-left: auto;
+
 }
-.header-address .header-link {
+.header-address li {
+  display: flex;
+}
+.header-link {
+  /* display: block; */
   padding-top: 32px;
   padding-bottom: 32px;
 }
